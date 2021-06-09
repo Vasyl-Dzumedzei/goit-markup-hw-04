@@ -479,10 +479,12 @@ body {
 
 .footer-welcome {
   color: var(--white-color);
+  font-weight: 700;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .footer-column2 {
