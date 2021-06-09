@@ -17,6 +17,15 @@ a {
   display: inline-block;
 }
 
+h1,
+h2,
+h3 {
+  text-decoration: none;
+  color: inherit;
+  font-size: 100%;
+  font: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;

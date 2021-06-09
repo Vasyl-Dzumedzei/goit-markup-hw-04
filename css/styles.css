@@ -8,6 +8,7 @@
   --bgc-buttons-section: #f5f4fa;
   --portfolio-buttons-border-color: #eeeeee;
   --header-border-color: #ececec;
+  --icons-color: #afb1b8;
 }
 
 body {
@@ -90,6 +91,7 @@ body {
   display: flex;
   width: 307px;
   justify-content: space-between;
+  /* align-items: center; */
 }
 
 .nav-list,
@@ -104,13 +106,35 @@ body {
   margin-right: 50px;
 }
 
+.contacts-list {
+  color: var(--secondary-text-color);
+}
+
+.contacts-list-item {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list-item:last-child,
 .contacts-list-item:last-child {
   margin-right: 0px;
 }
 
-.contacts-list {
-  color: var(--secondary-text-color);
+.icon-envelope,
+.icon-phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-envelope:hover,
+.icon-phone:hover {
+  fill: currentColor;
+}
+
+.contacts-list-link {
+  width: 161px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list-link,
@@ -133,6 +157,17 @@ body {
 /* герой */
 
 .hero-section.section {
+  background: #c4c4c4;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bgc-image.jpg);
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -217,6 +252,25 @@ body {
   margin-right: 0px;
 }
 
+.benefits-icon-bgc {
+  width: auto;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  height: 70px;
+  width: auto;
+}
+
 .benefits-title {
   font-weight: 700;
   line-height: 1.143;
@@ -291,7 +345,7 @@ body {
   letter-spacing: 0.03em;
   width: 270px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   padding-right: auto;
   padding-left: auto;
 }
@@ -304,8 +358,76 @@ body {
 
 .employee-position {
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
+
+.social-icons-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icons-link {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  fill: var(--icons-color);
+  /* background-color: inherit; */
+}
+
+.icons-link:hover,
+.icons-link:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+}
+
 /* наша команда */
+
+/* постоянные клиенты */
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  fill: var(--icons-color);
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-icon {
+  width: 106px;
+  height: 60px;
+}
+
+/* постоянные клиенты */
 
 /* -- СТУДИЯ -- */
 
@@ -319,7 +441,13 @@ body {
 
 .footer {
   display: flex;
+}
+
+.footer-column1 {
+  display: flex;
   flex-direction: column;
+  width: 231px;
+  margin-right: 70px;
 }
 
 .footer .logo {
@@ -349,6 +477,33 @@ body {
   margin-bottom: 9px;
 }
 
+.footer-welcome {
+  color: var(--white-color);
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-column2 {
+  width: 206px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.footer-column2 .icons-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-column2 .social-icons-list {
+  padding: 0;
+}
+
+.footer-column2 .icons-link:hover,
+.footer-column2 .icons-link:focus {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+}
 /* ФУТЕР */
 
 /* -- ПОРТФОЛІО -- */
@@ -379,6 +534,12 @@ body {
   padding: 6px 22px;
 }
 
+.filter-button:hover,
+.filter-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .filter-list > .item:not(:last-child) {
   margin-right: 8px;
 }
@@ -404,6 +565,12 @@ body {
   background: var(--white-color);
   border: 1px solid var(--portfolio-buttons-border-color);
 }
+
+.example-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .example-item:nth-child(3n + 0) {
   margin-right: 0px;
 }
