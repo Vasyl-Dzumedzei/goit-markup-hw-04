@@ -84,7 +84,7 @@ body {
 .nav-list {
   display: inline-flex;
   width: 294px;
-  margin-right: 331px;
+  margin-right: 305px;
 }
 
 .contacts-list {
@@ -101,8 +101,7 @@ body {
   line-height: 1.143;
 }
 
-.nav-list-item,
-.contacts-list-item {
+.nav-list-item {
   margin-right: 50px;
 }
 
@@ -111,6 +110,7 @@ body {
 }
 
 .contacts-list-item {
+  margin-right: 30px;
   display: flex;
   align-items: center;
 }
