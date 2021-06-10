@@ -344,10 +344,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   width: 270px;
-  padding-top: 30px;
-  /* padding-bottom: 30px; */
-  padding-right: auto;
-  padding-left: auto;
+  padding: 32px 30px;
 }
 
 .employee-name {
@@ -364,7 +361,7 @@ body {
 .social-icons-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 
 .social-icons-item:not(:last-child) {
@@ -379,11 +376,11 @@ body {
 .icons-link {
   width: 44px;
   height: 44px;
-  padding: 12px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   fill: var(--icons-color);
-  /* background-color: inherit; */
 }
 
 .icons-link:hover,
@@ -401,17 +398,19 @@ body {
   justify-content: center;
 }
 
-.customers-item {
+.customers-link {
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   fill: var(--icons-color);
 }
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -497,9 +496,13 @@ body {
   padding-bottom: 0;
 }
 
+.footer-column2 .icons-link {
+  fill: var(--white-color);
+}
+
 .footer-column2 .icons-link:hover,
 .footer-column2 .icons-link:focus {
-  fill: var(--white-color);
+  /* fill: var(--white-color); */
   background-color: var(--accent-color);
 }
 /* ФУТЕР */
