@@ -363,9 +363,7 @@ body {
 
 .social-icons-list {
   display: flex;
-  justify-content: space-between;
-  padding-left: 32px;
-  padding-right: 32px;
+  justify-content: center;
   padding-bottom: 30px;
 }
 
@@ -488,7 +486,6 @@ body {
 }
 
 .footer-column2 {
-  width: 206px;
   padding-top: 12px;
   padding-bottom: 40px;
 }
@@ -498,7 +495,9 @@ body {
 }
 
 .footer-column2 .social-icons-list {
-  padding: 0;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 0;
 }
 
 .footer-column2 .icons-link:hover,
@@ -518,7 +517,6 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
-
   margin-bottom: 50px;
 }
 
