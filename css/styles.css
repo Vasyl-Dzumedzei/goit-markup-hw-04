@@ -439,7 +439,7 @@ body {
 .footer {
   background-color: var(--bgc-hero);
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-column1 {
